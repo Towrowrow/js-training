@@ -5,7 +5,13 @@
  * and return the total
  *
  */
-
+function total (tabl){
+let tot=0;
+for(let i=0;i<tabl.length;i++)
+	{
+	tot=tot+tabl[i];
+	}
+return tot;}
 
 //* Begin of tests
 const assert = require('assert')

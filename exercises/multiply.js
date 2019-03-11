@@ -9,7 +9,22 @@
  */
 
 // Your code :
+function multiply(a,b){
+let zoubida=0;
+if(b<0){
+	for(let i=0;i>b;i--){	
+				zoubida-=a;
+			    }
+			    }
 
+else			{
+			for(let x=0;x<b;x++)
+			{
+			zoubida+=a;
+			}
+			}
+return zoubida;
+}
 //* Begin of tests
 const assert = require('assert')
 
