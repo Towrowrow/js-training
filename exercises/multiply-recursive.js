@@ -12,7 +12,19 @@
 // Your code :
 
 //* Begin of tests
+
 const assert = require('assert')
+
+
+function multiply(num1, num2){
+if(num1===0 || num2===0){return 0;}
+let count=0;
+      if(num2>0){ count = num1 + multiply(num1, num2-1) }
+else if (num2<0){ count = -(num1 + multiply(num1, -num2-1)) }
+
+return count;
+
+}
 
 assert.strictEqual(typeof multiply, 'function')
 assert.strictEqual(multiply.length, 2)
